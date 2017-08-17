@@ -1,0 +1,9 @@
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\bin\Debug\netcoreapp1.1\MenuApp.deps.json
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\bin\Debug\netcoreapp1.1\MenuApp.runtimeconfig.json
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\bin\Debug\netcoreapp1.1\MenuApp.runtimeconfig.dev.json
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\bin\Debug\netcoreapp1.1\MenuApp.dll
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\bin\Debug\netcoreapp1.1\MenuApp.pdb
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\obj\Debug\netcoreapp1.1\MenuApp.csprojResolveAssemblyReference.cache
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\obj\Debug\netcoreapp1.1\MenuApp.AssemblyInfo.cs
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\obj\Debug\netcoreapp1.1\MenuApp.dll
+C:\Users\Domea\Documents\GitHub\MenuAssignment\MenuApp\MenuApp\obj\Debug\netcoreapp1.1\MenuApp.pdb
