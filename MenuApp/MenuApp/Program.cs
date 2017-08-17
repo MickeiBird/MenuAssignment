@@ -5,6 +5,7 @@ namespace MenuApp
 {
     class Program
     {
+        static int videoCount;
         static void Main(string[] args)
         {
             string[] menuItems = {
@@ -14,7 +15,7 @@ namespace MenuApp
                 "Edit video",
                 "Exit"
             };
-
+           
             List<Video> videoList = new List<Video>(); 
             var selection = Menu(menuItems);
 
@@ -31,10 +32,10 @@ namespace MenuApp
                         Console.WriteLine("Please type the Name of the video\n");
                         string name = Console.ReadLine(); 
                         addVideo(name, videoList);
-                        
                         break;
                     case 3:
                         Console.WriteLine("Delete video...");
+                        deleteVideo(videoList);
                         break;
                     case 4:
                         Console.WriteLine("Edit video...");
@@ -76,9 +77,10 @@ namespace MenuApp
 
         private static List<Video> addVideo(string name, List<Video> videoList)
         {
-            
+
             Video video = new Video();
             video.name = name;
+            videoList.Add(video);
             for (int i = 0; i < videoList.Count; i++)
             {
                 if (videoList[i].id.Equals(null))
@@ -88,7 +90,7 @@ namespace MenuApp
                 }
             }
 
-            videoList.Add(video);
+            
             Console.WriteLine("\n{0} was added to videos : \n ", name);
             
             return videoList;
@@ -100,6 +102,26 @@ namespace MenuApp
             {
                 Console.WriteLine(vName.name + "\n");
             }
+        }
+
+        private static void deleteVideo(List<Video> vNames)
+        {
+            int selected;
+            Console.WriteLine("What video do you whant to delete?");
+            for (int i = 0; i < vNames.Count; i++)
+            {
+                Console.WriteLine((i + 1) + " : " + vNames[i].name);
+            }
+            Console.Write("\nType the number of the video you want to delete : ");
+            while (!int.TryParse(Console.ReadLine(), out selected) || selected < vNames[0].id || selected > vNames.Count)
+            {
+                Console.WriteLine("You need to select a number from {0}-{1}", vNames[0].id, vNames.Count);
+            }
+
+            vNames.RemoveAt(selected-1);
+            
+
+            
         }
 
         
